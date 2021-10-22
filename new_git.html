@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world! its wonderful to learn to code</h1>
+    <h1>Hello</h1>
+    <button onclick="test()">greet</button>
+    <script>
+        function test(){
+            const toggle = document.querySelector('h1');
+             if (toggle.innerHTML === "Hello") {
+                toggle.innerHTML = "It's great";
+                } else {
+                    toggle.innerHTML="Hello";
+             }
+        }
+    </script>
 </body>
 </html>
