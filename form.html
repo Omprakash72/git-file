@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>hii</h1>
+    <form>
+        <input autofocus id="name" placeholder= "name" type="text">
+        <input type="submit">
+    </form>
+    <script>
+        function greet(){
+            const name = document.querySelector('#name').value;
+            document.querySelector('h1').innerHTML = "Hello" + " " + name;
+            return false;             //to stop the auto refresh and hold the value.
+        }
+        document.querySelector('form').onsubmit = greet;
+    </script>
+</body>
+</html>
